@@ -1,0 +1,75 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Oxido",
+  "patterns": [
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#constants"
+    },
+    {
+      "include": "#variables"
+    },
+    {
+      "include": "#entities"
+    }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.oxido",
+          "match": "\\b(let|if|loop|break)\\b"
+        },
+        {
+          "name": "keyword.operator.comparison.oxido",
+          "match": "\\b(==)\\b"
+        }
+      ]
+    },
+    "variables": {
+      "patterns": [
+        {
+          "name": "variable.name.oxido",
+          "match": "\\b[a-zA-Z]\\b"
+        }
+      ]
+    },
+    "entities": {
+      "patterns": [
+        {
+          "name": "entity.name.function.oxido",
+          "match": "\\b(print|[a-zA-Z]())\\b"
+        }
+      ]
+    },
+    "constants": {
+      "patterns": [
+        {
+          "name": "constant.numeric.oxido",
+          "match": "\\b[0-9]\\b"
+        },
+        {
+          "name": "constant.language.oxido",
+          "match": "\\b(true|false)\\b"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.oxido",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.oxido",
+          "match": "\\\\."
+        }
+      ]
+    }
+  },
+  "scopeName": "source.oxido"
+}

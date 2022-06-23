@@ -1,0 +1,45 @@
+{
+  "name": "oxido-lang",
+  "displayName": "Oxido Lang",
+  "description": "Syntax highlighting for oxido",
+  "version": "1.0.0",
+  "publisher": "megatank58",
+  "icon": "icons/oxido.png",
+  "repository": {
+    "url": "https://github.com/oxidite/oxido-lang"
+  },
+  "engines": {
+    "vscode": "^1.68.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "oxido",
+        "aliases": [
+          "Oxido",
+          "oxido"
+        ],
+        "icon": {
+          "light": "./icons/oxido.png",
+          "dark": "./icons/oxido.png"
+        },
+        "extensions": [
+          ".o",
+          ".ox",
+          ".oxi"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "oxido",
+        "scopeName": "source.oxido",
+        "path": "./syntaxes/oxido.tmLanguage.json"
+      }
+    ]
+  }
+}
