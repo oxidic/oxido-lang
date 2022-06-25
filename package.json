@@ -2,7 +2,7 @@
   "name": "oxido-lang",
   "displayName": "Oxido Lang",
   "description": "Syntax highlighting for oxido",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "publisher": "megatank58",
   "icon": "icons/oxido.png",
   "repository": {
@@ -12,9 +12,16 @@
     "vscode": "^1.68.0"
   },
   "categories": [
-    "Programming Languages"
+    "Programming Languages",
+    "Snippets"
   ],
   "contributes": {
+    "snippets": [
+      {
+        "language": "oxido",
+        "path": "./snippets.json"
+      }
+    ],
     "languages": [
       {
         "id": "oxido",

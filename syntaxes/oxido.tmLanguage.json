@@ -16,6 +16,9 @@
     },
     {
       "include": "#entities"
+    },
+    {
+      "include": "#comments"
     }
   ],
   "repository": {
@@ -23,7 +26,7 @@
       "patterns": [
         {
           "name": "keyword.control.oxido",
-          "match": "\\b(let|if|loop|break)\\b"
+          "match": "\\b(let|if|loop|break|fn)\\b"
         },
         {
           "name": "keyword.operator.comparison.oxido",
@@ -43,7 +46,15 @@
       "patterns": [
         {
           "name": "entity.name.function.oxido",
-          "match": "\\b(print|[a-zA-Z]())\\b"
+          "match": "\\b(print|[a-zA-Z]\\[\\])\\b"
+        }
+      ]
+    },
+    "comments": {
+      "comments": [
+        {
+          "name": "comment",
+          "match": "\\b//[\\W\\d+]\\b"
         }
       ]
     },
@@ -51,7 +62,7 @@
       "patterns": [
         {
           "name": "constant.numeric.oxido",
-          "match": "\\b[0-9]\\b"
+          "match": "\\b[0-9]+\\b"
         },
         {
           "name": "constant.language.oxido",
