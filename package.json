@@ -2,7 +2,7 @@
   "name": "oxido-lang",
   "displayName": "Oxido Lang",
   "description": "Syntax highlighting for oxido",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "publisher": "megatank58",
   "icon": "icons/oxido.png",
   "repository": {
@@ -34,8 +34,6 @@
           "dark": "./icons/oxido.png"
         },
         "extensions": [
-          ".o",
-          ".ox",
           ".oxi"
         ],
         "configuration": "./language-configuration.json"

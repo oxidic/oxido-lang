@@ -26,11 +26,11 @@
       "patterns": [
         {
           "name": "keyword.control.oxido",
-          "match": "\\b(let|if|loop|break|fn)\\b"
+          "match": "\\b(let|if|loop|fn|break|return|exit)\\b"
         },
         {
-          "name": "keyword.operator.comparison.oxido",
-          "match": "\\b(==)\\b"
+          "name": "keyword.operator.oxido",
+          "match": "\\b(+|-|*|\\|^|=|==|!|!=|<|>|>=|<=)\\b"
         }
       ]
     },
@@ -38,7 +38,7 @@
       "patterns": [
         {
           "name": "variable.name.oxido",
-          "match": "\\b[a-zA-Z]\\b"
+          "match": "\\b[a-zA-Z]+\\b"
         }
       ]
     },
@@ -46,7 +46,7 @@
       "patterns": [
         {
           "name": "entity.name.function.oxido",
-          "match": "\\b(print|[a-zA-Z]\\[\\])\\b"
+          "match": "\\b([a-zA-Z]+())\\b"
         }
       ]
     },
